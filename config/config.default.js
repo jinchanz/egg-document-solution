@@ -16,4 +16,5 @@ exports.yuqueViewer = {
   lightColor: '#ffffff00',
   blackColor: 'black',
   logo: 'https://img.alicdn.com/tfs/TB1xYGCA1H2gK0jSZJnXXaT1FXa-204-240.png',
+  user: 'mark.ck'
 };
