@@ -13,8 +13,8 @@
 |onlyDoc|bool|true|只展示文件内容，隐藏侧边栏和header|
 |view|String|`'/help.html'`| 文档页面路由 |
 |prefix|String|`'/documents'`| 文档接口路由 |
-|title|String|北斗-帮助文档| 文档页面 title |
-|logo|String|http://img.alicdn.com/tfs/TB1pvJLOVXXXXbAXVXXXXXXXXXX-800-800.png| 文档页面 logo |
+|title|String|帮助文档| 文档页面 title |
+|logo|String|https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*OwZWQ68zSTMAAAAAAAAAAABkARQnAQ |文档页面 logo |
 |showSearch|String|true| 是否显示搜索框 |
 |lazyLoad|bool|false| 文档页面是否懒加载 |
 |showEditor|bool|false|是否显示跳转到语雀编辑的 icon |
@@ -23,9 +23,9 @@
 |lightColor|String|'#ffffff00'|header 的 light 模式 的颜色|
 |blackColor|String|'black'|header 的 dark 模式 的颜色|
 
-## Examples
+### Examples
 
-### plugin.js
+#### plugin.js
 
 ```js
 exports.yuqueViewer = {
@@ -34,7 +34,7 @@ exports.yuqueViewer = {
 };
 ```
 
-### config.default.js
+#### config.default.js
 
 ```js
 config.yuqueViewer = {
@@ -52,11 +52,17 @@ config.yuqueViewer = {
   darkMode: true,
   lightColor: '#ffffff00',
   blackColor: 'black',
-  logo: 'https://img.alicdn.com/tfs/TB1xYGCA1H2gK0jSZJnXXaT1FXa-204-240.png',
+  logo: 'https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*OwZWQ68zSTMAAAAAAAAAAABkARQnAQ',
 };
 ```
 
-### app.yuqueViewer
+## 使用
+
+### 直接访问
+根据上述配置中的 view 可以直接访问对应页面，例如服务启动的地址为：`http://localhost:3333` ，view 配置为 `/documents`，则文档访问 url 为：`http://localhost:3333/documents`
+
+### 方法调用
+#### app.yuqueViewer
 
 ```js
 await app.yuqueViewer.search('let');
