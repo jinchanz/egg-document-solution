@@ -16,4 +16,5 @@ exports.yuqueViewer = {
   lightColor: '#ffffff00',
   blackColor: 'black',
   logo: 'https://i.ablula.tech/ablula.png',
+  user: 'mark.ck'
 };
