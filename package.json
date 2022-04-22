@@ -1,7 +1,7 @@
 {
   "name": "@ablula/egg-yuque-viewer",
   "author": "mark.ck",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "egg plugin for yuque viewer",
   "eggPlugin": {
     "name": "yuqueViewer"
